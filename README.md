@@ -21,7 +21,7 @@ pip3 install -r requirements.txt
 
 ## Dataset
 Dataset folder in this repository is a template.
-You can download dataset from [here](https://drive.google.com/file/d/1Et9gOAAzHFt9dehw9BzNNQjItVsWlw7a/view?usp=sharing) and replace the Dataset folder with the one you've downloaded.
+You can download dataset from [here](https://drive.google.com/drive/folders/1tFaHurKL7Ri_Kj8PabfAhTjeA3D6Che7?usp=sharing) and replace the Dataset folder with the one you've downloaded.
 
 
 
@@ -29,11 +29,11 @@ You can download dataset from [here](https://drive.google.com/file/d/1Et9gOAAzHF
 
 #### For Evaluating BLEU Score
 ```bash
-python3 Evaluation/bleu_score.py --target-formulas target.txt --predicted-formulas predicted.txt --ngram 5
+python3 evaluation/bleu_score.py --target-formulas target.txt --predicted-formulas predicted.txt --ngram 5
 ```
 
 #### For Evaluating Edit Distance Accuracy
 
 ```bash
-python3 Evaluation/edit_distance.py --target-formulas target.txt --predicted-formulas predicted.txt
+python3 evaluation/edit_distance.py --target-formulas target.txt --predicted-formulas predicted.txt
 ```
