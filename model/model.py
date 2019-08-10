@@ -100,7 +100,6 @@ class Decoder(nn.Module):
                                out_features=input_dim)
 
     def forward(self, v, y):
-
         # h = self.h.repeat(v.shape[0], 1)
         h = None
         y_hat = []
@@ -113,7 +112,6 @@ class Decoder(nn.Module):
                 c = self.attention(h, v)
                 o = self.o(torch.cat([h, c], dim=1))
                 y_hat.append(self.y_hat(o))
-
         else:
             for t in range(200):
                 # if y.item() == 0: break

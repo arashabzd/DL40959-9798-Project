@@ -76,7 +76,7 @@ class Tokenize:
                 ]
             )
         else:
-            data[1] = np.array(data[1])
+            data[1] = np.array([0])
         return data
 
 
